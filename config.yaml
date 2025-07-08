@@ -1,0 +1,5 @@
+topics:
+  orp: /sentry/sensors/orp/a2d2
+
+zarr_conversion_specs:
+  chunk_size: 1000
