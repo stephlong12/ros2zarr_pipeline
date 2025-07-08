@@ -6,13 +6,13 @@ from tqdm import tqdm
 
 from rosbags.rosbag1 import Reader
 from rosbags.serde import deserialize_ros1
-from message_type_creator import MsgParser
+#from message_type_creator import MsgParser
 from rosbags.typesys import register_types
 
 from extract import get_topics_from_config, extract_fields
 
-parser = MsgParser('~/Code/ros2zarr_pipeline/config/ds_msgs/ds_hotel_msgs')
-register_types(parser.get_type_definitions())
+#parser = MsgParser('~/Code/ros2zarr_pipeline/config/ds_msgs/ds_hotel_msgs')
+#register_types(parser.get_type_definitions())
 
     
 def init_zarr_dataset(root, topic, sample_shape=(10,), chunk_size=1000, dtype=np.float64):
